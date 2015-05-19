@@ -20,14 +20,14 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-australian-stylesheets');
 ```
 
-## The "australian-stylesheets" task
+## The "australianStylesheets" (aka: "ozcss") task
 
 ### Overview
-In your project's Gruntfile, add a section named `australian-stylesheets` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `australianStylesheets` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  australian-stylesheets: {
+  australianStylesheets: {
     options: {
       // Task-specific options go here.
     },
@@ -35,7 +35,18 @@ grunt.initConfig({
       // Target-specific file lists and/or options go here.
     },
   },
-})
+
+  // Or
+
+  ozcss: {
+    options: {
+      // Task-specific options go here.
+    },
+    your_target: {
+      // Target-specific file lists and/or options go here.
+    },
+  },
+});
 ```
 
 ### Options

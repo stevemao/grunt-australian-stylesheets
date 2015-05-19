@@ -52,8 +52,8 @@ module.exports = function(grunt) {
         grunt.verbose.writeln(msg);
     }
 
-    grunt.registerMultiTask('australianStylesheets', 'Compile Australian CSS.', function() {
-        options = this.options({
+    function task(self) {
+        options = self.options({
             diff: false,
             map: false
         });
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
         processor = postcss()
             .use(ozcss());
 
-        this.files.forEach(function(f) {
+        self.files.forEach(function(f) {
             if (!f.src.length) {
                 return grunt.fail.warn('No source files were found.');
             }
@@ -112,5 +112,14 @@ module.exports = function(grunt) {
         if (tally.diffs) {
             grunt.log.ok(tally.diffs + ' ' + grunt.util.pluralize(tally.diffs, 'diff/diffs') + ' created.');
         }
+    }
+
+    grunt.registerMultiTask('australianStylesheets', 'Compile Australian CSS.', function() {
+        task(this);
     });
+
+    grunt.registerMultiTask('ozcss', 'Compile Australian CSS.', function() {
+        task(this);
+    });
+
 };
