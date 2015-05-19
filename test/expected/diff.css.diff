@@ -4,6 +4,6 @@ Index: tmp/diff.css
 +++ tmp/diff.css
 @@ -1,3 +1,3 @@
  .test {
-+    color: #0581C1 !important;
 -    colour: true-blue !bloody-oath;
++    color: #0581C1 !important;
  }
