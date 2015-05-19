@@ -1,0 +1,49 @@
+{
+  "name": "grunt-australian-stylesheets",
+  "version": "0.0.0",
+  "description": "Compile Australian CSS",
+  "author": {
+    "name": "Steve Mao",
+    "email": "maochenyan@gmail.com"
+  },
+  "repository": "stevemao/grunt-australian-stylesheets",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "gruntplugin",
+    "css",
+    "postprocessor",
+    "australian-stylesheets",
+    "australia",
+    "postcss",
+    "australian",
+    "oz",
+    "stylesheet",
+    "preprocess",
+    "postcss-runner"
+  ],
+  "files": [
+    "tasks",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "diff": "^1.4.0",
+    "postcss": "^4.1.11",
+    "postcss-australian-stylesheets": "0.0.5"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.2.0"
+  }
+}

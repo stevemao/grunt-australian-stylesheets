@@ -1,0 +1,1 @@
+{"version":3,"sources":["../test/fixtures/sm.css"],"names":[],"mappings":"AAAA;EACE,0BAA+B,EAAE;;AAEnC;EACE,0BAA+B,EAAE","file":"sm.css","sourcesContent":[".bg1 {\n  colour: true-blue !bloody-oath; }\n\n.bg2 {\n  colour: true-blue !bloody-oath; }\n"]}
